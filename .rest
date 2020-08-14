@@ -1,0 +1,68 @@
+POST  http://localhost:4000/v1/auth/sigup
+Content-Type: application/json
+
+
+{
+ "name":"Delord",
+ "lastname":"Kahumba",
+ "mail":"kyu2@gmail.com",
+ "password":"1234"
+}
+
+###
+###  Soins medicaux
+### Ajout
+POST http://localhost:4000/v1/setting/soinsmedicau
+Content-Type:  application/json
+
+{
+    "description":"Prendre un repas froid apres une chute et 2 coup"
+}
+
+###
+Get http://localhost:4000/v1/setting/soinsmedicau
+
+###
+PUT  http://localhost:4000/v1/setting/soinsmedicau
+Content-Type: application/json
+
+{
+    "id":"qX_ZlcrGF",
+    "description":"Prendre un repas chaud..."
+}
+###
+PUT  http://localhost:4000/v1/setting/soinsmedicau/delete
+Content-Type: application/json
+
+{
+    "id":"qX_ZlcrGF"
+}
+###
+DELETE http://localhost:4000/v1/setting/soinsmedicau
+Content-Type: application/json
+
+{
+    "id":"RVYm3pQDW"
+}
+###
+GET http://localhost:4000/v1/setting/soinsperso
+###
+POST http://localhost:4000/v1/setting/soinsperso
+Content-Type: application/json
+
+{
+    "description":"Prendre des temps à tems de Paracetamol..."
+}
+###
+
+GEt http://localhost:4000/v1/epidemie
+
+###
+POST http://localhost:4000/v1/epidemieh
+Content-Type: application/json
+
+{
+    "epidemie":"Corona"
+}
+###
+PUT 
